@@ -20,12 +20,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.ivanilson.os.domain.Cliente;
-import com.ivanilson.os.domain.Tecnico;
 import com.ivanilson.os.dtos.ClienteDTO;
-import com.ivanilson.os.dtos.TecnicoDTO;
 import com.ivanilson.os.services.ClienteService;
-
-import net.bytebuddy.asm.Advice.Return;
 
 @CrossOrigin("*")
 @RestController

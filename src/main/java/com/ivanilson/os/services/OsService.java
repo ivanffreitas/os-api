@@ -45,7 +45,7 @@ public class OsService {
 	}
 
 	public OS update(@Valid OSDTO obj) {
-		findById(obj.getId());		
+		findById(obj.getId());
 		return fromDTO(obj);
 	}
 
@@ -61,11 +61,11 @@ public class OsService {
 
 		newObj.setTecnico(tec);
 		newObj.setCliente(cli);
-		
-		if(newObj.getStatus().getCod().equals(2)) {
+
+		if (newObj.getStatus().getCod().equals(2)) {
 			newObj.setDataFechamento(LocalDateTime.now());
 		}
-		
+
 		return repository.save(newObj);
 	}
 
